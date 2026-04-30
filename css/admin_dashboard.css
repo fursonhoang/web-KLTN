@@ -1,0 +1,168 @@
+/* Admin Dashboard Specific Styles - Metrics, Charts, and Segmented Tables */
+
+/* Stats Cards V2 (Dashboard Overview) */
+.admin-overview-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stat-card-v2 {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--ADMIN-BORDER, #E2E8F0);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stat-v2-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-v2-label {
+    font-size: 14px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.stat-v2-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1E293B;
+}
+
+.stat-v2-trend {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.stat-v2-icon {
+    width: 48px;
+    height: 48px;
+    background: #F1F5F9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Charts Layout */
+.admin-charts-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.chart-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--ADMIN-BORDER, #E2E8F0);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1E293B;
+    margin: 0;
+}
+
+.chart-subtitle {
+    font-size: 13px;
+    color: #64748B;
+    margin-top: 4px;
+}
+
+.chart-legend {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #94A3B8;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.stat-v2-badge {
+    background: #FEF2F2;
+    color: #EF4444;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Table V3 Style - Segmented Backgrounds (Dashboard Recent Items) */
+.admin-table-v3-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.table-v3-title-area {
+    background: rgba(67, 70, 85, 0.2);
+    padding: 32px 40px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.admin-table-v3 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table-v3 thead {
+    background: rgba(67, 70, 85, 0.2);
+}
+
+.admin-table-v3 th {
+    text-align: left;
+    padding: 24px 40px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.admin-table-v3 tbody {
+    background: white;
+}
+
+.admin-table-v3 td {
+    padding: 24px 40px;
+    border-bottom: 1px solid #F1F5F9;
+    vertical-align: middle;
+}
+
+.admin-table-v3 tr:last-child td {
+    border-bottom: none;
+}

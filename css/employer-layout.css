@@ -14,7 +14,8 @@
 }
 
 body {
-    margin: 0;
+    margin-top: 80px; /* To prevent content being hidden under fixed header */
+    margin-left: 328px; /* To prevent content being hidden under fixed sidebar */
     padding: 0;
     background-color: var(--employer-bg);
     font-family: 'Inter', sans-serif;

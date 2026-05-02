@@ -10,7 +10,8 @@
 }
 
 body {
-    margin: 0;
+    margin-top: 80px; /* To prevent content being hidden under fixed header */
+    margin-left: 328px; /* To prevent content being hidden under fixed sidebar */
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);

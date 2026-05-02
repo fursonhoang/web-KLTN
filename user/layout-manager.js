@@ -6,7 +6,7 @@
 const JOBSGO_CONFIG = {
     brand: {
         name: "JobsGO",
-        logo: "/assets/icons/logo-primary.svg",
+        logo: "/assets/images/Logo-khongnen.png",
         link: "/", // Sẽ được tính toán động dựa trên role
         slogan: "Kết nối đam mê, kiến tạo sự nghiệp."
     },
@@ -285,9 +285,13 @@ class LayoutManager {
             <header class="user-header-sticky">
                 <div class="user-header-container">
                     <a href="${this.config.brand.link}" class="user-brand">
-                        <img src="${this.config.brand.logo}" alt="${this.config.brand.name}" 
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                        <span style="display: none;">${this.config.brand.name}</span>
+                        <img src="${this.config.brand.logo}"
+                         alt="${this.config.brand.name}" 
+                         class="brand-logo"
+                             onerror="this.style.display='none'; 
+                             this.nextElementSibling.style.display='block'">
+
+                        <span class="brand-name">${this.config.brand.name}</span>
                     </a>
 
                     <nav class="user-nav">

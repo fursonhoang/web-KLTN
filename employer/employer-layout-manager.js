@@ -34,9 +34,30 @@ class EmployerLayoutManager {
         if (!container) return;
 
         const sidebarHTML = `
-            <aside class="employer-sidebar">
+            <aside class="employer-sidebar"
+            style="position: fixed; 
+            top: 0; 
+            left: 0; 
+            height: 100vh; 
+            width: 280px; 
+            background-color: var(--sidebar-bg); 
+            padding: 24px; 
+            display: flex; 
+            flex-direction: column; 
+            z-index: 1000;
+            justify-content: space-between;">
                 <div class="sidebar-brand">
-                    <a href="employer-dashboard.html" class="logo">JobsGO</a>
+                    <a href="employer-dashboard.html" 
+                    class="logo"
+                     style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                    
+                     <img src="assets/images/Logo-khongnen.png" 
+                     alt="JobsGO" 
+                    class="sidebar-logo"
+                    onerror="this.style.display='none'"
+                     style="height: 48px; object-fit: contain;">
+                    <span class="sidebar-text" style="font-weight: 700; font-size: 32px; color: #2563EB;">JobsGO</span>
+                    </a>
                 </div>
                 
                 <div class="sidebar-user-profile">
@@ -77,7 +98,14 @@ class EmployerLayoutManager {
         if (!container) return;
 
         const headerHTML = `
-            <header class="employer-header">
+            <header class="employer-header"
+            style="position: fixed; 
+            top: 0; 
+            left: 328px;
+            right: 0;
+            height: 80px; 
+            padding: 0 32px;
+            z-index: 1000;">
                 <div class="header-left">
                     <button class="btn-primary-blue" onclick="window.location.href='post-job.html'">
                         <img src="assets/images/nha-tuyen-dung/tong-quan/ic-add.svg" alt="+">

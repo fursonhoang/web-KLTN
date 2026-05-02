@@ -63,7 +63,7 @@ body, .jobgos-root {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    margin-left: 80px;
+    margin-left: 40px;
     padding: 0 40px;
     display: flex;
     align-items: center;
@@ -79,7 +79,11 @@ body, .jobgos-root {
     text-decoration: none;
     letter-spacing: -0.5px;
 }
-
+.brand-logo {
+     height: 48px !important;
+    width: auto !important;
+    object-fit: contain;
+}
 .user-nav {
     display: flex;
     gap: 36px;

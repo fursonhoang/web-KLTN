@@ -230,9 +230,12 @@
 <body style="background: #FAFAFA;">
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" style="display: block; width: 320px; 
+        position: fixed; top: 0; left: 0; height: 100vh; 
+        border-right: 1px solid var(--ADMIN-BORDER); padding-top: 24px;">
             <div class="sidebar-logo">
-                <a href="admin-dashboard.html" style="text-decoration: none;">
+                <a href="admin-dashboard.html" style="text-decoration: none; margin-left: 40px; 
+                display: flex; align-items: center; gap: 8px;">
                     <span style="color: var(--PRIMARY1); font-size: 32px; font-weight: 800;">JobsGO</span>
                 </a>
             </div>
@@ -281,8 +284,16 @@
         <!-- Main Area -->
         <main class="main-area">
             <!-- Header Bar -->
-            <header class="dashboard-header" style="position: fixed; top: 0; z-index: 1000;left: 260px; right: 0; background: white; border-bottom: 1px solid var(--ADMIN-BORDER); display: flex; align-items: center; justify-content: space-between; padding: 0 40px;">
-                <div class="admin-header-search">
+            <header class="dashboard-header" style="position: fixed; 
+            top: 0; z-index: 1000;
+            left: 320px; right: 0; padding-right: 120px;
+             border-bottom: 1px solid var(--ADMIN-HEADER-BORDER); background: ADMIN-HEADER-BG;
+             display: flex; align-items: center; justify-content: space-between; padding: 0 120px 0 32px;">
+                <div class="admin-header-search" style=" display: flex; align-items: center;
+                gap: 8px; background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 24px;
+                width: 540px;">
                     <img src="../assets/images/ic_caidathethong/ic_timtheoten,IDemail.svg" alt="Search" width="18">
                     <input type="text" placeholder="Tìm theo tên, bài viết hoặc chuyên mục...">
                 </div>
@@ -304,13 +315,13 @@
             </header>
 
             <!-- Content Area -->
-            <div class="dashboard-content" style="padding: 32px 40px; margin-top: 72px;">
+            <div class="dashboard-content" style="margin-top: 72px;">
                 <!-- Breadcrumb -->
-                <div style="font-size: 14px; color: #64748B; margin-bottom: 24px;">
+                <div style="font-size: 14px; color: #64748B; margin-bottom: 24px; margin-right: 120px; margin-left: 80px;">
                     <a href="manage-blog.html" style="color: #64748B; text-decoration: none;">Quản lý blog/nội dung</a> <span style="margin: 0 8px;">&gt;</span> <span style="color: #1E293B; font-weight: 600;">Sửa chi tiết bài viết</span>
                 </div>
 
-                <div class="edit-blog-layout-j">
+                <div class="edit-blog-layout-j" style="margin-left: 80px; margin-right: 120px;">
                     <!-- Left: Editor Area -->
                     <div class="blog-editor-column-j">
                         <div class="blog-card-j title-input-card-j" style="margin-bottom: 24px;">

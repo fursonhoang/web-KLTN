@@ -138,13 +138,16 @@
 <body style="background: #FAFAFA;">
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" style="display: block; width: 320px; 
+        position: fixed; top: 0; left: 0; height: 100vh; 
+        border-right: 1px solid var(--ADMIN-BORDER); padding-top: 24px;">
             <div class="sidebar-logo">
-                <a href="admin-dashboard.html" style="text-decoration: none;">
+                <a href="admin-dashboard.html" tyle="text-decoration: none; margin-left: 40px; 
+                display: flex; align-items: center; gap: 8px;">
                     <span style="color: var(--PRIMARY1); font-size: 32px; font-weight: 800;">JobsGO</span>
                 </a>
             </div>
-            <nav class="sidebar-menu">
+            <nav class="sidebar-menu" style="margin-left: 48px;">
                 <a href="admin-dashboard.html" class="menu-item">
                     <img src="../assets/images/admin-quan-li-tin-tuyen-dung/ic_tong_quan.svg" alt="O">
                     Tổng quan
@@ -188,8 +191,16 @@
 
         <main class="main-area">
             <!-- Header Bar -->
-            <header class="dashboard-header" style="position: fixed; top: 0; z-index: 1000;left: 260px; right: 0; background: white; border-bottom: 1px solid var(--ADMIN-BORDER); display: flex; align-items: center; justify-content: space-between; padding: 0 40px;">
-                <div class="admin-header-search">
+            <header class="dashboard-header" style="position: fixed; 
+            top: 0; z-index: 1000;
+            left: 320px; right: 0; padding-right: 120px;
+             border-bottom: 1px solid var(--ADMIN-HEADER-BORDER); background: ADMIN-HEADER-BG;
+             display: flex; align-items: center; justify-content: space-between; padding: 0 120px 0 32px;">
+                <div class="admin-header-search" style=" display: flex; align-items: center;
+                gap: 8px; background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 24px;
+                width: 540px;">
                     <img src="../assets/images/user-dashboard/ic-search.svg" alt="Search" width="18">
                     <input type="text" placeholder="Tìm theo tên, ID, email...">
                 </div>
@@ -209,9 +220,9 @@
                 </div>
             </header>
 
-            <div class="dashboard-content" style="padding: 40px; margin-top: 72px;">
+            <div class="dashboard-content" style="margin-top: 72px;">
                 <!-- Title Row -->
-                <div class="admin-page-title-area">
+                <div class="admin-page-title-area" style="margin-left: 80px; margin-right: 120px; margin-bottom: 32px;">
                     <div class="admin-page-title-row">
                         <div>
                             <h1 class="admin-page-title">Quản lý người dùng</h1>
@@ -225,7 +236,7 @@
                 </div>
 
                 <!-- User Metrics Row -->
-                <div class="user-metrics-row">
+                <div class="user-metrics-row" style="margin-left: 80px; margin-right: 120px; margin-bottom: 32px;">
                     <div class="user-stat-card">
                         <div class="user-stat-info">
                             <div class="user-stat-label">TỔNG NGƯỜI DÙNG</div>
@@ -250,7 +261,7 @@
                 </div>
 
                 <!-- Filter Bar -->
-                <div class="admin-filter-bar">
+                <div class="admin-filter-bar" style="margin-left: 80px; margin-right: 120px; margin-bottom: 32px;">
                     <div class="filter-input-group">
                         <img src="../assets/images/user-dashboard/ic-search.svg" alt="S" width="18">
                         <input type="text" placeholder="Tìm theo tên, email hoặc ID...">
@@ -275,7 +286,7 @@
                 </div>
 
                 <!-- Users Table -->
-                <div class="admin-table-container">
+                <div class="admin-table-container" style="margin-left: 80px; margin-right: 120px;">
                     <table class="admin-table">
                         <thead>
                             <tr>
@@ -403,7 +414,7 @@
                 </div>
 
                 <!-- User Promo Block -->
-                <div class="user-promo-block">
+                <div class="user-promo-block" style="margin-left: 80px; margin-right: 120px;">
                     <div class="user-promo-content">
                         <h2 class="user-promo-title">Phân tích hành vi người dùng</h2>
                         <p class="user-promo-desc">

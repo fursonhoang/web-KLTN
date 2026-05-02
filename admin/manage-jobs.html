@@ -97,13 +97,16 @@
 <body style="background: #FFFFFF;">
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" style="display: block; width: 320px; 
+        position: fixed; top: 0; left: 0; height: 100vh; 
+        border-right: 1px solid var(--ADMIN-BORDER); padding-top: 24px;">
             <div class="sidebar-logo">
-                <a href="admin-dashboard.html" style="text-decoration: none;">
+                <a href="admin-dashboard.html" style="text-decoration: none; margin-left: 40px; 
+                display: flex; align-items: center; gap: 8px;">
                     <span style="color: var(--PRIMARY1); font-size: 32px; font-weight: 800;">JobsGO</span>
                 </a>
             </div>
-            <nav class="sidebar-menu">
+            <nav class="sidebar-menu" style="margin-left: 48px;">
                 <a href="admin-dashboard.html" class="menu-item">
                     <img src="../assets/images/admin-quan-li-tin-tuyen-dung/ic_tong_quan.svg" alt="Overview">
                     Tổng quan
@@ -148,8 +151,16 @@
         <!-- Main Content -->
         <main class="main-area">
             <!-- Header Bar -->
-            <header class="dashboard-header" style="position: fixed; top: 0; z-index: 1000;left: 260px; right: 0; background: white; border-bottom: 1px solid var(--ADMIN-BORDER); display: flex; align-items: center; justify-content: space-between; padding: 0 40px;">
-                <div class="admin-header-search">
+            <header class="dashboard-header" style="position: fixed; 
+            top: 0; z-index: 1000;
+            left: 320px; right: 0; padding-right: 120px;
+             border-bottom: 1px solid var(--ADMIN-HEADER-BORDER); background: ADMIN-HEADER-BG;
+             display: flex; align-items: center; justify-content: space-between; padding: 0 120px 0 32px;">
+                <div class="admin-header-search" style=" display: flex; align-items: center;
+                gap: 8px; background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 24px;
+                width: 540px;">
                     <img src="../assets/images/user-dashboard/ic-search.svg" alt="Search" width="18">
                     <input type="text" placeholder="Tìm theo tên, ID, email...">
                 </div>
@@ -170,8 +181,8 @@
             </header>
 
             <!-- Page Content -->
-            <div class="dashboard-content" style="padding: 40px; background: white; margin-top: 72px;">
-                <div class="admin-page-title-area">
+            <div class="dashboard-content" style="margin-top: 72px;">
+                <div class="admin-page-title-area" style="margin-left: 80px; margin-right: 120px;">
                     <div class="admin-page-title-row">
                         <div>
                             <h1 class="admin-page-title">Quản lý tin tuyển dụng</h1>
@@ -184,7 +195,7 @@
                     </div>
                 </div>
                 <!-- Filters -->
-                <div class="admin-filter-bar">
+                <div class="admin-filter-bar" style="margin-left: 80px; margin-right: 120px;">
                     <div class="filter-input-group">
                         <img src="../assets/images/user-dashboard/ic-search.svg" alt="Search" width="18" class="search-icon-gray">
                         <input type="text" placeholder="Tìm theo vị trí, công ty...">
@@ -200,7 +211,7 @@
                 </div>
 
                 <!-- Tabs -->
-                <div class="admin-tabs">
+                <div class="admin-tabs" style="margin-left: 80px; margin-right: 120px;">
                     <div class="admin-tab active">Tất cả(128)</div>
                     <div class="admin-tab neutral">Chờ duyệt(42)</div>
                     <div class="admin-tab neutral">Đã duyệt(58)</div>
@@ -208,7 +219,7 @@
                 </div>
 
                 <!-- Table -->
-                <div class="admin-table-container">
+                <div class="admin-table-container" style="margin-left: 80px; margin-right: 120px;">
                     <table class="admin-table">
                         <thead>
                             <tr>
@@ -374,7 +385,7 @@
                 </div>
 
                 <!-- Stats Bottom Cards -->
-                <div class="admin-stats-bottom">
+                <div class="admin-stats-bottom" style="margin-left: 80px; margin-right: 120px;">
                     <div class="stat-card-admin active">
                         <div class="stat-icon-box" style="background: rgba(255,255,255,0.2);">
                             <img src="../assets/images/admin-quan-li-tin-tuyen-dung/ic_tong_tin_dang.svg" alt="T" width="24">

@@ -15,7 +15,8 @@
 
 body {
     margin-top: 80px; /* To prevent content being hidden under fixed header */
-    margin-left: 280px; /* To prevent content being hidden under fixed sidebar */
+    margin-left: 320px; /* To prevent content being hidden under fixed sidebar */
+    margin-right: 80px; /* Optional: Add some right margin for better aesthetics */
     padding: 0;
     background-color: var(--employer-bg);
     font-family: 'Inter', sans-serif;
@@ -49,7 +50,7 @@ body {
 
 /* --- SIDEBAR --- */
 .employer-sidebar {
-    width: 260px;
+    width: 320px;
     flex: 1;
     background-color: var(--sidebar-bg); /* #E5E7EB or similar */
     display: flex;
@@ -139,6 +140,7 @@ body {
 .sidebar-nav ul {
     list-style: none;
     padding: 0;
+    padding-left: 32px; /* To align with user profile content */
     margin: 0;
     display: flex;
     flex-direction: column;

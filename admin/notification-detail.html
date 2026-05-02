@@ -353,13 +353,16 @@
 <body style="background: #FAFAFA;">
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" style="display: block; width: 320px; 
+        position: fixed; top: 0; left: 0; height: 100vh; 
+        border-right: 1px solid var(--ADMIN-BORDER); padding-top: 24px;">
             <div class="sidebar-logo">
-                <a href="admin-dashboard.html" style="text-decoration: none;">
+                <a href="admin-dashboard.html" style="text-decoration: none; margin-left: 40px; 
+                display: flex; align-items: center; gap: 8px;">
                     <span style="color: var(--PRIMARY1); font-size: 32px; font-weight: 800;">JobsGO</span>
                 </a>
             </div>
-            <nav class="sidebar-menu">
+            <nav class="sidebar-menu" style="margin-left: 48px;">
                 <a href="admin-dashboard.html" class="menu-item">
                     <img src="../assets/images/ic_tquanadmin/ic_tongquan.svg" alt="Overview">
                     Tổng quan
@@ -404,8 +407,16 @@
         <!-- Main Content -->
         <main class="main-area">
             <!-- Header Bar -->
-            <header class="dashboard-header" style="position: fixed; top: 0; z-index: 1000;left: 260px; right: 0; background: white; border-bottom: 1px solid var(--ADMIN-BORDER); display: flex; align-items: center; justify-content: space-between; padding: 0 40px;">
-                <div class="admin-header-search">
+            <header class="dashboard-header" style="position: fixed; 
+            top: 0; z-index: 1000;
+            left: 320px; right: 0; padding-right: 120px;
+             border-bottom: 1px solid var(--ADMIN-HEADER-BORDER); background: ADMIN-HEADER-BG;
+             display: flex; align-items: center; justify-content: space-between; padding: 0 120px 0 32px;">
+                <div class="admin-header-search" style=" display: flex; align-items: center;
+                gap: 8px; background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 24px;
+                width: 540px;">
                     <img src="../assets/images/ic_caidathethong/ic_timtheoten,IDemail.svg" alt="Search" width="18">
                     <input type="text" placeholder="Tìm theo tên, email hoặc ID...">
                 </div>
@@ -425,12 +436,12 @@
                 </div>
             </header>
 
-            <div class="dashboard-content" style="padding: 40px; margin-top: 72px;">
-                <div class="admin-breadcrumb" style="font-size: 13px; color: #94A3B8; margin-bottom: 32px;">
+            <div class="dashboard-content" style="margin-top: 72px;">
+                <div class="admin-breadcrumb" style="font-size: 13px; color: #94A3B8; margin-bottom: 32px; margin-right: 120px; margin-left: 80px;">
                     Tổng quan &nbsp; > &nbsp; Thông báo hệ thống &nbsp; > &nbsp; <span style="color: #64748B; font-weight: 600;">Chi tiết thông báo</span>
                 </div>
 
-                <div class="admin-page-title-row" style="margin-bottom: 32px;">
+                <div class="admin-page-title-row" style="margin-bottom: 32px; margin-right: 120px; margin-left: 80px; display: flex; align-items: center; justify-content: space-between;">
                     <h1 class="admin-page-title">Chi tiết thông báo</h1>
                     <a href="notifications.html" class="btn-back-header">
                         <img src="../assets/images/ic_thong_bao/chi-tiet/ic-back.svg" alt="back" width="14">
@@ -439,7 +450,7 @@
                 </div>
 
                 <!-- Main Detail Card -->
-                <div class="detail-main-card">
+                <div class="detail-main-card" style="margin-left: 80px; margin-right: 120px;">
                     <h2 class="detail-title">Cảnh báo: Phát hiện xung đột đồng bộ hóa dữ liệu trên Server S2-Production</h2>
                     
                     <div class="detail-meta-row">
@@ -510,7 +521,7 @@
                 </div>
 
                 <!-- Bottom Grid Info -->
-                <div class="bottom-info-grid">
+                <div class="bottom-info-grid" style="margin-left: 80px; margin-right: 120px;">
                     <div class="info-card-d">
                         <div class="info-icon-box-d">
                             <img src="../assets/images/ic_thong_bao/chi-tiet/ic-lich-su-tuong-tu.svg" alt="history">

@@ -177,9 +177,12 @@
 <body style="background: #FAFAFA;">
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" style="display: block; width: 320px; 
+        position: fixed; top: 0; left: 0; height: 100vh; 
+        border-right: 1px solid var(--ADMIN-BORDER); padding-top: 24px;">
             <div class="sidebar-logo">
-                <a href="admin-dashboard.html" style="text-decoration: none;">
+                <a href="admin-dashboard.html" style="text-decoration: none; margin-left: 40px; 
+                display: flex; align-items: center; gap: 8px;">
                     <span style="color: var(--PRIMARY1); font-size: 32px; font-weight: 800;">JobsGO</span>
                 </a>
             </div>
@@ -228,8 +231,16 @@
         <!-- Main Content -->
         <main class="main-area">
             <!-- Header Bar -->
-            <header class="dashboard-header" style="position: fixed; top: 0; z-index: 1000;left: 260px; right: 0; background: white; border-bottom: 1px solid var(--ADMIN-BORDER); display: flex; align-items: center; justify-content: space-between; padding: 0 40px;">
-                <div class="admin-header-search">
+            <header class="dashboard-header" style="position: fixed; 
+            top: 0; z-index: 1000;
+            left: 320px; right: 0; padding-right: 120px;
+             border-bottom: 1px solid var(--ADMIN-HEADER-BORDER); background: ADMIN-HEADER-BG;
+             display: flex; align-items: center; justify-content: space-between; padding: 0 120px 0 32px;">
+                <div class="admin-header-search" style=" display: flex; align-items: center;
+                gap: 8px; background: #ffffff;
+                padding: 8px 12px;
+                border-radius: 24px;
+                width: 540px;">
                     <img src="../assets/images/ic_quanlyblog/ic_timtheoten,IDemail.svg" alt="Search" width="18">
                     <input type="text" placeholder="Tìm theo tên, email hoặc ID...">
                 </div>
@@ -250,9 +261,9 @@
                 </div>
             </header>
 
-            <div class="dashboard-content" style="padding: 40px; margin-top: 72px;">
+            <div class="dashboard-content" style="margin-top: 72px;">
                 <!-- Page Title -->
-                <div class="admin-page-title-row">
+                <div class="admin-page-title-row" style="margin-left: 80px; margin-right: 120px; display: flex; align-items: center; justify-content: space-between;">
                     <div>
                         <h1 class="admin-page-title">Quản lý blog/nội dung</h1>
                         <p class="admin-page-desc" style="color: #64748B;">Kiến tạo và điều phối các nội dung chất lượng cho cộng đồng tìm việc và nhà tuyển dụng.</p>
@@ -263,7 +274,7 @@
                     </button>
                 </div>
 
-                <div class="blog-stats-grid">
+                <div class="blog-stats-grid" style="margin-left: 80px; margin-right: 120px; display: flex; align-items: center; justify-content: space-between;">
                     <div class="stat-card-view">
                         <div>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -299,7 +310,7 @@
                 </div>
 
                 <!-- Filter Area -->
-                <div style="background-color: #E7E8E9 !important; margin-top: 48px;" class="admin-filter-bar">
+                <div style="background-color: #E7E8E9 !important; margin-top: 48px; margin-left: 80px; margin-right: 120px;" class="admin-filter-bar">
                     <div class="filter-input-group" style="flex: 1;">
                         <input type="text" placeholder="Tìm theo tên bài viết hoặc tên tác giả">
                         <img src="../assets/images/ic_quanlyblog/ic_tim theo ten bai viet.svg" alt="search" width="20" style="opacity: 0.5;">
@@ -323,7 +334,7 @@
                 </div>
 
                 <!-- Table -->
-                <div class="admin-table-container">
+                <div class="admin-table-container" style="margin-top: 24px; margin-left: 80px; margin-right: 120px;">
                     <table class="admin-table">
                         <thead style="background: #E7E8E9;">
                             <tr>
@@ -424,7 +435,7 @@
                 </div>
 
                 <!-- Bottom Cards -->
-                <div class="blog-bottom-grid">
+                <div class="blog-bottom-grid" style="margin-right: 120px; margin-left: 80px;">
                     <div class="suggestion-card">
                         <div class="card-icon-box" style="background: #2563EB;">
                             <img src="../assets/images/ic_quanlyblog/ic_goi y chu de.svg" alt="icon">

@@ -39,17 +39,17 @@ class EmployerLayoutManager {
             top: 0; 
             left: 0; 
             height: 100vh; 
-            width: 280px; 
+            width: 320px; 
             background-color: var(--sidebar-bg); 
-             
             display: flex; 
             flex-direction: column; 
             z-index: 1000;
             justify-content: space-between;">
+
                 <div class="sidebar-brand">
                     <a href="employer-dashboard.html" 
                     class="logo"
-                     style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                     style="display: flex; align-items: center; gap: 8px; text-decoration: none; padding: 24px 32px;">
                     
                      <img src="assets/images/Logo-khongnen.png" 
                      alt="JobsGO" 
@@ -60,7 +60,10 @@ class EmployerLayoutManager {
                     </a>
                 </div>
                 
-                <div class="sidebar-user-profile">
+                <div class="sidebar-user-profile"
+                style="display: flex; 
+                align-items: center; gap: 16px;
+                 padding-left: 40px; border-top: 1px solid var(--sidebar-border);">
                     <div class="user-avatar-wrapper">
                         <img src="assets/images/nha-tuyen-dung/tong-quan/${EMPLOYER_CONFIG.user.avatar}" alt="User Avatar" class="user-avatar">
                     </div>
@@ -101,12 +104,13 @@ class EmployerLayoutManager {
             <header class="employer-header"
             style="position: fixed; 
             top: 0; 
-            left: 280px;
+            left: 320px;
             right: 0;
             height: 80px; 
             padding: 0 32px;
+            padding-left: 32px; /* To prevent content being hidden under fixed sidebar */
             z-index: 1000;">
-                <div class="header-left">
+                <div class="header-left" style="height: 100%; display: flex; align-items: center; justify-content: space-between;">
                     <button class="btn-primary-blue" onclick="window.location.href='post-job.html'">
                         <img src="assets/images/nha-tuyen-dung/tong-quan/ic-add.svg" alt="+">
                         Đăng tin mới
@@ -118,7 +122,7 @@ class EmployerLayoutManager {
                         Báo cáo
                     </button>
                 </div>
-                <div class="header-right">
+                <div class="header-right" style="padding-right: 80px; height: 100%; display: flex; align-items: center; gap: 16px;">
                     <button class="btn-icon-bell" onclick="window.location.href='notifications.html'">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>

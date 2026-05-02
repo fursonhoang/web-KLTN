@@ -41,7 +41,7 @@ class EmployerLayoutManager {
             height: 100vh; 
             width: 280px; 
             background-color: var(--sidebar-bg); 
-            padding: 24px; 
+             
             display: flex; 
             flex-direction: column; 
             z-index: 1000;
@@ -101,7 +101,7 @@ class EmployerLayoutManager {
             <header class="employer-header"
             style="position: fixed; 
             top: 0; 
-            left: 328px;
+            left: 280px;
             right: 0;
             height: 80px; 
             padding: 0 32px;
